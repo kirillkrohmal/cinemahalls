@@ -38,9 +38,9 @@ public class Main {
 
         for (Place place : places) {
             if (place != null) {
-                System.out.println("Место " + place + " занято");
+                System.out.printf("Место " + place + " занято");
             } else {
-                System.out.println("Место " + place + " свободно");
+                System.out.printf("Место " + place + " свободно");
             }
         }
     }
