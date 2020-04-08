@@ -36,22 +36,22 @@ public class Main {
         places.add(place11);
         places.add(place12);
 
-        String html = "<table>";
-        for (int i = 0; i < width_and_height; i++) {
+        String html = "<html><head><title>Анкета</title></head><table>"; for (int i = 0; i < width_and_height; i++) {
             System.out.println("+----+----+----+----+----+----+----+----+----+----+");
             for (int j = 0; j < width_and_height; j++) {
                 if (j == width_and_height - 1) {
                     System.out.print("|");
                     for (Place place : places) {
                         if (place != null) {
-                            System.out.printf("Место " + place + " занято ");
+                            System.out.printf("Место " + place + " занято. ");
                         } else {
-                            System.out.printf("Место " + place + " свободно ");
+                            System.out.printf("Место " + place + " свободно. ");
                         }
                     }
                 }
             }
-        }
+        };
+
         System.out.println(html);
     }
 }
