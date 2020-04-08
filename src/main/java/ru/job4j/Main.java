@@ -7,6 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Place> places = new ArrayList<>();
+        int width_and_height=10;
+        int count=1;
+
 
         Place place1 = new Place("0", "0 ");
         Place place2 = new Place("1", "2");
@@ -36,12 +39,24 @@ public class Main {
         places.add(place12);
 
 
-        for (Place place : places) {
-            if (place != null) {
-                System.out.printf("Место " + place + " занято");
-            } else {
-                System.out.printf("Место " + place + " свободно");
+
+        for(int i=0;i<width_and_height ; i++) {
+            System.out.println("+----+----+----+----+----+----+----+----+----+----+");
+
+            for(int j=0;j<width_and_height;j++) {
+
+                if(j==width_and_height-1) { // closing | for last column
+                    System.out.print("|");
+                    for (Place place : places) {
+                        if (place != null) {
+                            System.out.printf("Место " + place + " занято ");
+                        } else {
+                            System.out.printf("Место " + place + " свободно ");
+                        }
+                    }
+                }
             }
         }
+
     }
 }
