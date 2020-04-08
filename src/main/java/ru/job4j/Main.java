@@ -6,9 +6,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
         List<Place> places = new ArrayList<>();
-        int width_and_height=10;
+        int width_and_height = 10;
 
         Place place1 = new Place("0", "0 ");
         Place place2 = new Place("1", "2");
@@ -37,9 +36,27 @@ public class Main {
         places.add(place11);
         places.add(place12);
 
-        /*
+        String html = "<table>";
+        for (int i = 0; i < width_and_height; i++) {
+            System.out.println("+----+----+----+----+----+----+----+----+----+----+");
+            for (int j = 0; j < width_and_height; j++) {
+                if (j == width_and_height - 1) {
+                    System.out.print("|");
+                    for (Place place : places) {
+                        if (place != null) {
+                            System.out.printf("Место " + place + " занято ");
+                        } else {
+                            System.out.printf("Место " + place + " свободно ");
+                        }
+                    }
+                }
+            }
+        }
+        System.out.println(html);
+    }
+}
 
-        for(int i=0;i<width_and_height ; i++) {
+        /*for(int i=0;i<width_and_height ; i++) {
             System.out.println("+----+----+----+----+----+----+----+----+----+----+");
 
             for(int j=0;j<width_and_height;j++) {
@@ -55,26 +72,12 @@ public class Main {
                     }
                 }
             }
-        }
-*/
-
-        String html = "\"<table class=\"table table-bordered\">\n" +
-                "            <thead>\n" +
-                "            <tr>\n" +
-                "                <th style=\"width: 120px;\">Ряд / Место</th>\n" +
-                "                <th>1</th>\n" +
-                "                <th>2</th>\n" +
-                "                <th>3</th>\n" +
-                "            </tr>\n" +
-                "            </thead>\n" +
-                "            <tbody>\n" +
-                "            <tr>\n" +
-                "                <th>1</th>\n" +
-                "                <td><input type=\"radio\" name=\"place\" value=\"11\">" + place1 + " занято <td>" +
-                "                <td><input type=\"radio\" name=\"place\" value=\"11\">" + place7 + " свободно <td>" +
-                "                <td><input type=\"radio\" name=\"place\" value=\"11\">" + place8 + " занято <td>";
+        }*/
 
 
-        System.out.println(html);
-    }
-}
+
+
+
+
+
+
