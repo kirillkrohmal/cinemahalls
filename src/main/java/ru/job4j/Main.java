@@ -9,18 +9,15 @@ public class Main {
         List<Place> places = new ArrayList<>();
         int width_and_height = 10;
 
-        Place place1 = new Place("0", "0 ");
+        Place place1 = new Place("0", "0");
         Place place2 = new Place("1", "2");
         Place place3 = new Place("1", "3");
         Place place4 = new Place("2", "1");
         Place place5 = new Place("2", "2");
         Place place6 = new Place("2", "3");
-        Place place7 = null;
-        Place place8 = new Place("3", "1 ");
-        Place place9 = new Place("3", "2 ");
-        Place place10 = null;
+        Place place8 = new Place("3", "1");
+        Place place9 = new Place("3", "2");
         Place place11 = new Place("3", "3");
-        Place place12 = null;
 
         places.add(place1);
         places.add(place2);
@@ -29,33 +26,32 @@ public class Main {
         places.add(place5);
         places.add(place5);
         places.add(place6);
-        places.add(place7);
         places.add(place8);
         places.add(place9);
-        places.add(place10);
         places.add(place11);
-        places.add(place12);
 
-        String html = "<html><head><title>Анкета</title></head><table>"; for (int i = 0; i < width_and_height; i++) {
-            System.out.println("+----+----+----+----+----+----+----+----+----+----+");
+        StringBuilder table = new StringBuilder();
+        table.append("<html><head></head><table>");
+        for (int i = 0; i < width_and_height; i++) {
+            table.append("<tr>");
             for (int j = 0; j < width_and_height; j++) {
                 if (j == width_and_height - 1) {
-                    System.out.print("|");
                     for (Place place : places) {
-                        if (place != null) {
-                            System.out.printf("Место " + place + " занято. ");
+                        if (Integer.parseInt(place.getColumn()) == j && Integer.parseInt(place.getRow()) == i) {
+                            table.append("Место" + place + "занято");
                         } else {
-                            System.out.printf("Место " + place + " свободно. ");
+                            table.append("Место " + place + " свободно ");
                         }
                     }
                 }
+                table.append("</tr>");
             }
-        };
-
-        System.out.println(html);
+            table.append("</table>");
+            table.append("</html>");
+            System.out.println(table);
+        }
     }
 }
-
         /*for(int i=0;i<width_and_height ; i++) {
             System.out.println("+----+----+----+----+----+----+----+----+----+----+");
 
