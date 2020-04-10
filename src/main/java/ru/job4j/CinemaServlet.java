@@ -34,6 +34,7 @@ public class CinemaServlet extends HttpServlet {
                                 + "     <td>Raw 2, Place 2 </td>\n"
                                 + "     <td>Raw 2, Place 3 </td>\n"
                                 + "</tr>\n"
+                                + "<tr>\n"
                                 + "     <td>3</td>\n"
                                 + "     <td>Raw 3, Place 1 </td>\n"
                                 + "     <td>Raw 3, Place 2 </td>\n"
