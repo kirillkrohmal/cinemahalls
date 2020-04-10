@@ -1,14 +1,12 @@
 package ru.job4j;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class CinemaServlet extends HttpServlet {
 
@@ -26,21 +24,21 @@ public class CinemaServlet extends HttpServlet {
                                 + "</tr>\n"
                                 + "<tr>\n"
                                 + "     <td>1</td>\n"
-                                + "     <td>busy place. Raw 1, Place 1 </td>\n"
-                                + "     <td>busy place. Raw 1, Place 2 </td>\n"
+                                + "     <td>X Raw 1, Place 1 </td>\n"
+                                + "     <td>X Raw 1, Place 2 </td>\n"
                                 + "     <td>Raw 1, Place 3 </td>\n"
                                 + "</tr>\n"
                                 + "<tr>\n"
                                 + "     <td>2</td>\n"
-                                + "     <td>busy place. Raw 2, Place 1 </td>\n"
+                                + "     <td>X Raw 2, Place 1 </td>\n"
                                 + "     <td>Raw 2, Place 2 </td>\n"
                                 + "     <td>Raw 2, Place 3 </td>\n"
                                 + "</tr>\n"
                                 + "     <td>3</td>\n"
                                 + "     <td>Raw 3, Place 1 </td>\n"
                                 + "     <td>Raw 3, Place 2 </td>\n"
-                                + "     <td>busy place. Raw 3, Place 3 </td>\n"
-                         + "</tr>\n" + "</table>");
+                                + "     <td>X Raw 3, Place 3 </td>\n"
+                         + "</tr>\n" + "</table>\n");
         writer.flush();
     }
 }
