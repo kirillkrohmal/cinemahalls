@@ -6,10 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Place> places = new ArrayList<>();
-        int width_and_height = 10;
-
-        Place place1 = new Place("0", "0");
+        Place place1 = new Place("1", "1");
         Place place2 = new Place("1", "2");
         Place place3 = new Place("1", "3");
         Place place4 = new Place("2", "1");
@@ -18,6 +15,8 @@ public class Main {
         Place place8 = new Place("3", "1");
         Place place9 = new Place("3", "2");
         Place place11 = new Place("3", "3");
+
+        List<Place> places = new ArrayList<>();
 
         places.add(place1);
         places.add(place2);
@@ -29,6 +28,8 @@ public class Main {
         places.add(place8);
         places.add(place9);
         places.add(place11);
+
+        int width_and_height = 10;
 
         StringBuilder table = new StringBuilder();
         table.append("<html><head></head><table>");
@@ -52,23 +53,7 @@ public class Main {
         }
     }
 }
-        /*for(int i=0;i<width_and_height ; i++) {
-            System.out.println("+----+----+----+----+----+----+----+----+----+----+");
 
-            for(int j=0;j<width_and_height;j++) {
-
-                if(j==width_and_height-1) { // closing | for last column
-                    System.out.print("|");
-                    for (Place place : places) {
-                        if (place != null) {
-                            System.out.printf("Место " + place + " занято ");
-                        } else {
-                            System.out.printf("Место " + place + " свободно ");
-                        }
-                    }
-                }
-            }
-        }*/
 
 
 
