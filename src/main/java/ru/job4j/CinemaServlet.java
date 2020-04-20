@@ -36,7 +36,7 @@ public class CinemaServlet extends HttpServlet {
         places.add(place9);
         places.add(place11);
 
-        StringBuilder table = new StringBuilder();
+        StringBuilder tableBuild = new StringBuilder();
         int width_and_height = 10;
 
         resp.setContentType("text/html");
@@ -51,11 +51,16 @@ public class CinemaServlet extends HttpServlet {
         writer.println("</tr>\n");
         writer.println("<tr>\n");
         writer.println("     <td>1</td>\n");
-        writer.println("     <td>");
-        writer.println("/td>");
-        writer.println("     <td>X Raw 1, Place 2 </td>\n");
-        writer.println("     <td>Raw 1, Place 3 </td>\n");
-        writer.println("</tr>\n");
+
+        String table = null;
+
+        if (table == "") {
+            writer.println("<td>X<td>");
+
+        } else {
+            writer.println("<td><td>");
+        }
+
         writer.println("<tr>\n");
         writer.println("     <td>2</td>\n");
         writer.println("     <td>X Raw 2, Place 1 </td>\n");

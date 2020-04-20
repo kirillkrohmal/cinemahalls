@@ -5,11 +5,11 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>CinemaServlet</servlet-name>
-        <servlet-class>ru.job4j.CinemaServlet</servlet-class>
+        <servlet-name>ServiceServlet</servlet-name>
+        <servlet-class>ru.job4j.ServiceServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>CinemaServlet</servlet-name>
+        <servlet-name>ServiceServlet</servlet-name>
         <url-pattern>/view</url-pattern>
     </servlet-mapping>
 
