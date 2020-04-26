@@ -1,14 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@ page import="ru.job4j.CinemaServlet" %>
-<%@ page import="ru.job4j.Place" %>
-<%@ page import="ru.job4j.Main" %>
 <!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -20,41 +16,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <title>Сервис-кинотеатр</title>
+    <title>Кандидат мечты</title>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Raw/Place</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-            </tr>
-            </thead>
-            <tbody>
-            <% for (Place place : Main.instOf().findAll()) { %>
-            <tr>
-                <td><%= place.getColumn() %></td>
-            </tr>
-            <% } %>
+<%
+    String id = request.getParameter("id");
 
-            <% for (Place place : Main.instOf().findAll()) { %>
-            <tr>
-                <td>
-                    <a href="<%=request.getContextPath()%>/edit.jsp=<%=null%>">
-                        <i class="fa fa-edit mr-3"></i>
-                    </a>
-                </td>
-            </tr>
-            <% } %>
-            </tbody>
-        </table>
+%>
+<div class="container pt-3">
+    <div class="row">
+        <div class="card" style="width: 100%">
+            <div class="card-header">
+                <% if (id == null) { %>
+                Новый кандидат.
+                <% } else { %>
+                Редактирование кандидата.
+                <% } %>
+            </div>
+            <div class="card-body">
+
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+
+            </div>
+        </div>
     </div>
 </div>
 </body>
 </html>
-
-
