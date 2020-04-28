@@ -72,7 +72,7 @@
                 <td><input type="radio" name="place" value="11"> Ряд 2, Место 10</td>
             </tr>
             <tr>
-                <th>2</th>
+                <th>3</th>
                 <td><input type="radio" name="place" value="11"> Ряд 3, Место 1</td>
                 <td><input type="radio" name="place" value="11"> Ряд 3, Место 2</td>
                 <td><input type="radio" name="place" value="11"> Ряд 3, Место 3</td>
@@ -85,7 +85,7 @@
                 <td><input type="radio" name="place" value="11"> Ряд 3, Место 10</td>
             </tr>
             <tr>
-                <th>2</th>
+                <th>4</th>
                 <td><input type="radio" name="place" value="11"> Ряд 4, Место 1</td>
                 <td><input type="radio" name="place" value="11"> Ряд 4, Место 2</td>
                 <td><input type="radio" name="place" value="11"> Ряд 4, Место 3</td>
@@ -98,7 +98,7 @@
                 <td><input type="radio" name="place" value="11"> Ряд 4, Место 10</td>
             </tr>
             <tr>
-                <th>2</th>
+                <th>5</th>
                 <td><input type="radio" name="place" value="11"> Ряд 5, Место 1</td>
                 <td><input type="radio" name="place" value="11"> Ряд 5, Место 2</td>
                 <td><input type="radio" name="place" value="11"> Ряд 5, Место 3</td>
