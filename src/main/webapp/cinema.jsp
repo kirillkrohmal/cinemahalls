@@ -24,37 +24,98 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <table class="table">
+    <div class="row pt-3">
+        <h4>
+            Бронирование месте на сеанс
+        </h4>
+        <table class="table table-bordered">
             <thead>
             <tr>
-                <th>Raw/Place</th>
+                <th style="width: 120px;">Ряд / Место</th>
                 <th>1</th>
                 <th>2</th>
                 <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
             </tr>
             </thead>
             <tbody>
-            <% for (Place place : Main.instOf().findAll()) { %>
             <tr>
-                <td><%= place.getColumn() %></td>
+                <th>1</th>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 1</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 2</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 3</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 4</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 5</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 6</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 7</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 8</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 9</td>
+                <td><input type="radio" name="place" value="11"> Ряд 1, Место 10</td>
             </tr>
-            <% } %>
-
-            <% for (Place place : Main.instOf().findAll()) { %>
             <tr>
-                <td>
-                    <a href="<%=request.getContextPath()%>/edit.jsp=<%=null%>">
-                        <i class="fa fa-edit mr-3"></i>
-                    </a>
-                </td>
+                <th>2</th>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 1</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 2</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 3</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 4</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 5</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 6</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 7</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 8</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 9</td>
+                <td><input type="radio" name="place" value="11"> Ряд 2, Место 10</td>
             </tr>
-            <% } %>
+            <tr>
+                <th>2</th>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 1</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 2</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 3</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 4</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 5</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 6</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 7</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 8</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 9</td>
+                <td><input type="radio" name="place" value="11"> Ряд 3, Место 10</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 1</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 2</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 3</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 4</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 5</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 6</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 7</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 8</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 9</td>
+                <td><input type="radio" name="place" value="11"> Ряд 4, Место 10</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 1</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 2</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 3</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 4</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 5</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 6</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 7</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 8</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 9</td>
+                <td><input type="radio" name="place" value="11"> Ряд 5, Место 10</td>
+            </tr>
             </tbody>
         </table>
+    </div>
+    <div class="row float-right">
+        <button type="button" class="btn btn-success">Оплатить</button>
     </div>
 </div>
 </body>
 </html>
-
-
